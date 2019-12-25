@@ -1,3 +1,2 @@
 @echo off
-
-node bot.js
+cmd /K "npm install discord.js && node bot.js"
