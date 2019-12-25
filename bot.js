@@ -33,14 +33,10 @@ bot.on("message", message => {                                      //Si la comm
 
 
     if (!message.content.startsWith(prefix)) return;                //si le message commence par le prefix
-    var audd = message.content.substring(prefix.length).split(" "); // /!\ pour le switch()
     const [command, ...args] = message.content.split(' ')           //on initialise les arguments
 
-    switch (audd[0].toLowerCase()) {
 
-
-
-case "me":                                  //commande "!me"
+if (message.content.includes('ouaf ?')){                                  //commande "ouaf ?"
 
 start()                                     //On affiche le départ
 let compteur = 0                            //compteur
@@ -70,8 +66,6 @@ let lesalon = laguilde.channels.find(channel => channel.name === "aaa");   //on 
 lesalon.send("Il y a désormais "+(newmembre)+" ids dans la base de données !\nIl y a eu "+addition+" membres en plus depuis la dernière fois")
 
 fin()                                       //fin
-break;
-
     }
 })
 console.log("\nMade by:\n")
