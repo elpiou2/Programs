@@ -66,6 +66,7 @@ let lesalon = laguilde.channels.find(channel => channel.name === "aaa");   //on 
 lesalon.send("Il y a désormais "+(newmembre)+" ids dans la base de données !\nIl y a eu "+addition+" membres en plus depuis la dernière fois")
 
 fin()                                       //fin
+console.log("Il y a désormais "+(newmembre)+" ids dans la base de données !\nIl y a eu "+addition+" membres en plus depuis la dernière fois")
     }
 })
 console.log("\nMade by:\n")
